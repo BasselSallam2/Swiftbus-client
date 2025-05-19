@@ -1,73 +1,156 @@
-# <Title>
+# 🚍 SwiftBus Egypt
 
-<Title>
-## Overview
+> A complete intercity trip booking system for Egypt  
+> [🌐 Visit Live Project](https://swiftbusegypt.com)
 
-This Project uses the following:
+SwiftBus is a full-stack web application that allows users to search, book, and pay for bus tickets between Egyptian cities, with real-time seat availability, secure online payments, and a dynamic admin dashboard.
 
-- example
-- example
+---
 
-## Installation
+## 🎯 Project Overview
 
-To install and run the backend application locally, follow these steps:
+**Client Website Features:**
+- Search for trips between cities
+- Select available seats in real-time
+- Seats are temporarily locked for 10 minutes
+- Secure online payment using Paymob
+- Download e-ticket after payment
+- Apply discount vouchers
+- Receive email confirmations via SendGrid
 
-### Prerequisites
+**Admin Dashboard Features:**
+- Create, edit, and delete trips
+- Dashboard with booking and revenue statistics
+- Manage employees and monitor their performance
+- Generate trip reports with payment status
+- Manage customers and their tickets
+- Create and manage discount vouchers
+- Control frontend content of the public website
 
-- example
-- example
+---
 
-### Setup
+## 🌐 Live Site
 
-1. Clone this repository to your local machine:
+🔗 [https://swiftbusegypt.com](https://swiftbusegypt.com)
 
-   ```bash
-   git clone <link>
-   ```
+---
 
-2. Navigate to the backend directory:
+## ⚙️ Tech Stack
 
-   ```bash
-   cd <folder_name>
-   ```
+| Layer        | Tech Used                                                   |
+|--------------|-------------------------------------------------------------|
+| Backend      | Node.js (Express), Bun, TypeScript                          |
+| Frontend     | EJS templating                                              |
+| Validation   | Zod                                                         |
+| ORM & DB     | Prisma ORM, MySQL                                           |
+| Payment      | Paymob                                                      |
+| Emails       | SendGrid                                                    |
+| Scheduling   | RRule                                                       |
+| Tools        | ESLint, Husky, Docker, Postman, Swagger                     |
 
-3. Install dependencies
+---
 
-   ```bash
-    npm install
-   ```
+## 📸 Client Website Screenshots
 
-4. create .env file
+### Homepage
+![Homepage](./screenshots/homepage.png)
 
-   - Copy the .env.example file and rename it to .env.
-   - update the environment variables with your MySQL database connection details.
+### Search Form
+![Search Form](./screenshots/search-form.png)
 
-### Running the code
+### Trips Selection
+![Trips Selection](./screenshots/trips_selection.jpeg)
 
-```bash
-# Access The code on localhost:3000
-npm run dev
-```
+### Seat Selection
+![Seat Selection](./screenshots/seat-selection.png)
 
-## Scripts
+### Payment
+![Payment](./screenshots/payment.png)
 
-There are the available scripts you can run with: `npm run {script-name}
-| Name | Example | Description |
-| -------- | -----------------| --------------------------------------------------------------------------------------------------------|
-| | npm run dev | Launches a development server with hotreload. |
-| | npm run build | Builds the Project for Deployment |
-| | npm run start | Starts a production server (requires running build before this one). |
-| | npm run lint | Runs eslint across the project files (add --fix flag to attempt to fix the issues automatically). |
-| | npm run format | Runs Prettier Formatter and apply changes |
+### Success Ticket
+![Success Ticket](./screenshots/success-ticket.png)
 
-## Environment Variables
+### Ticket Preview
+![Ticket Preview](./screenshots/ticket-preview.png)
 
-There are the available scripts you can run with: `npm run {script-name}
-| Variable | Description |
-| -------- |--------------------------------------------------------------------------------------------------------|
-| | |
-| | |
+---
 
-## code Style
+## 🛠 Admin Dashboard Screenshots
 
-i use both eslint and prettier to ensure consistent coding style, The style is enforced as both a pre-commit git hook using husky
+### Dashboard Home
+![Dashboard Home](./screenshots/dashboard_home.png)
+
+### Dashboard Booking
+![Dashboard Booking](./screenshots/dashboard_booking.png)
+
+### Dashboard Reservation
+![Dashboard Reservation](./screenshots/dashboard_reservation.png)
+
+### Dashboard Tickets
+![Dashboard Tickets](./screenshots/dashboard_tickets.png)
+
+### Dashboard AddTrip
+![Dashboard AddTrip](./screenshots/dashboard_addTrip.png)
+
+### Dashboard EditTrip
+![Dashboard EditTrip](./screenshots/dashboard_editTrip.png)
+
+### Dashboard ViewTrips
+![Dashboard ViewTrips](./screenshots/dashboard_viewTrips.png)
+
+### Dashboard AddCity
+![Dashboard AddCity](./screenshots/dashboard_addCity.png)
+
+### Dashboard ViewCites
+![Dashboard ViewCites](./screenshots/dashboard_viewCites.png)
+
+### Dashboard AddStation
+![Dashboard AddStation](./screenshots/dashboard_addStation.png)
+
+### Dashboard ViewStations
+![Dashboard ViewStations](./screenshots/dashboard_viewStations.png)
+
+### Dashboard AddEmployee
+![Dashboard AddEmployee](./screenshots/dashboard_addEmployee.png)
+
+### Dashboard ViewEmployees
+![Dashboard ViewEmployees](./screenshots/dashboard_viewEmployees.png)
+
+### Dashboard AddVoucher
+![Dashboard AddVoucher](./screenshots/dashboard_addVoucher.png)
+
+### Dashboard ViewVouchers
+![Dashboard ViewVouchers](./screenshots/dashboard_viewVouchers.png)
+
+### Dashboard ViewCustomer
+![Dashboard ViewCustomer](./screenshots/dashboard_viewCoustmer.png)
+
+### Dashboard EditFrontSections
+![Dashboard EditFrontSections](./screenshots/dashboard_editFrontSections.png)
+
+### Dashboard EditFrontFooter
+![Dashboard EditFrontFooter](./screenshots/dashboard_editFrontFooter.png)
+
+
+---
+
+## 🧠 What I Learned
+
+- How to build and structure a scalable full-stack application using modern tools.
+- Managing data validation and error handling with **Zod**.
+- Building a real-time seat locking mechanism with timers to avoid double booking.
+- Secure integration of **Paymob** payment gateway.
+- Automating emails with **SendGrid** and dynamic templates.
+- Creating admin-level tools and dashboards with role-based access.
+- Using **Bun** for faster runtime performance over traditional Node.js setups.
+- Writing clean code and enforcing consistency using **ESLint** and **Husky** pre-commit hooks.
+
+---
+
+## 📬 Contact
+
+Want to collaborate, hire, or ask questions?
+
+- GitHub: [@BasselSallam2](https://github.com/BasselSallam2)
+- LinkedIn: [Bassel Sallam](https://www.linkedin.com/in/basselsallam)
+
